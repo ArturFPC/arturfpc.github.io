@@ -49,7 +49,7 @@ export const HeroSection = () => {
                         <div className='text-2xl text-gray-600 flex items-center h-20 gap-3'>
                             {MOCK_CONTACTS.map((contact,index)=>(
                                 <a 
-                                    href='{contact.url}'
+                                    href={contact.url}
                                     key={`contact-${index}`}
                                     target='_blank'
                                     className='hover:text-gray-100 transition-colors'
@@ -66,7 +66,7 @@ export const HeroSection = () => {
                 <Image 
                         width={420}
                         height={404}
-                        src="/images/profile-pic.png"
+                        src="/images/profile-pic.jpg"
                         alt="Foto de perfil do Artur Francisco"
                         className='w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover '
                 />
