@@ -23,6 +23,18 @@ export const WorkExperience = () => {
                     alt:"Logo da empresa Realtec Soluções em Gestão"
                     }
                 }/>
+                <ExperienceItem item={
+                    {name:"IFMG - Reitoria",
+                    start:"jan 2019",
+                    end:"fev 2019",
+                    src:"https://drive.google.com/uc?id=1u5HMdLTOBEytD4cj3i3L1EgwNU7SCnc2",
+                    job:"Estigiário na equipe de suporte e manutenção",
+                    about:"Atuação no setor de suporte e manutenção, dentro das diversas atividades pertinentes à manutenção de computadores vinculados aos servidores do IFMG, Reitoria.",
+                    techs:["Manutenção de computadores"],
+                    link:"https://www.linkedin.com/school/ifmgnarede/",
+                    alt:"Logo da empresa Realtec Soluções em Gestão"
+                    }
+                }/>
             </div>
 
         </section>
