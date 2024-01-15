@@ -1,6 +1,7 @@
 import { cn } from "@/app/lib/utils"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { TbArrowBigRight, TbArrowBigRightLine } from "react-icons/tb"
 
 type NavItemsProps = {
     label : string
@@ -12,11 +13,11 @@ export const NavItem = ({label, href}: NavItemsProps) => {
     return (
         <Link href={href} className={
             cn(
-                "text-gray-400 flex items-center gap-2 font-medium font-mono",
+                "text-gray-400 flex items-center gap-2 font-medium font-mono p-5 rounded bg-blue-900 hover:bg-blue-800 transition-colors",
                 isActive && 'text-gray-50'
             )
         }>
-            <span className="text-cyan-500">#</span>
+            <TbArrowBigRightLine/>
             {label}
         </Link>
     )

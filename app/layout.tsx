@@ -4,6 +4,8 @@ import { ReactNode } from 'react'
 import { Header } from './components/header/index'
 import { ContactForm } from './components/contact-form'
 import { Footer } from './components/footer'
+import { BackToTop } from './components/back-to-top'
+import { Toaster } from './components/toaster'
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
@@ -19,10 +21,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${plexMono.variable}`}>
       <body>
+        <Toaster/>
         <Header />
         {children}
         <ContactForm/>
         <Footer/>
+        <BackToTop/>
       </body>
     </html>
   )

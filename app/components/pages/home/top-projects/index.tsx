@@ -14,7 +14,7 @@ export const TopProjects = () => {
                     project={
                         {name : "TyPython",
                         src : "https://drive.google.com/uc?id=1sVETj5kTTznqoZAvZ-yRXQH57KYfPh6L",
-                        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolor officiis exercitationem voluptatibus delectus hic, placeat debitis quibusdam illum aliquid asperiores saepe ad consequuntur itaque vel cupiditate unde facilis nihil? Consectetur illum magni, consequuntur nisi sed illo quos vitae molestiae animi saepe, maiores, eaque dolorum distinctio qui et fugit excepturi!",
+                        text : "Este foi um projeto realizado durante a disciplina de compiladores no oitavo período de graduação do curso de Engenharia de Computação no IFMG campus Bambuí. Realizei esse projeto juntamente com dois colegas Deivison Oliveira Costa e Mickael Osvaldo Oliveira, e por meio deste criamos uma linguagem de programação inspirada no Python, por meio da criação de três analisadores, um léxico, um sintático e um semântico.",
                         alt : "Thumbnail do projeto TyPython",
                         link : "https://github.com/ArturFPC/tyPython",
                         techs:["Python"]}
@@ -25,7 +25,7 @@ export const TopProjects = () => {
                     project={
                         {name: "NLW eSports",
                         src: "https://drive.google.com/uc?id=1Iy6IV0yxv_kgTvDAMeVGphgjB-3zTZky",
-                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolor officiis exercitationem voluptatibus delectus hic, placeat debitis quibusdam illum aliquid asperiores saepe ad consequuntur itaque vel cupiditate unde facilis nihil? Consectetur illum magni, consequuntur nisi sed illo quos vitae molestiae animi saepe, maiores, eaque dolorum distinctio qui et fugit excepturi!",
+                        text: "Projeto criado durante uma das NLW fornecidas pela empresa RocketSeat, por meio desse projeto pude ter uma maior experiência com desenvolvimento WEB e Mobile, através de experiências com as principais tecnologias que foram demonstradas nesse evento, que no caso foram React, React Native e TypeScript.",
                         alt: "Thumbnail do projeto NLW eSports",
                         link: "https://github.com/ArturFPC/nlw-eSports",
                         techs: ["React", "TypeScript"]}

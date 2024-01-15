@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from '@/app/components/button'
 import { TechBadge } from '@/app/components/tech-badge'
 import Image from 'next/image'
@@ -24,25 +26,32 @@ const MOCK_CONTACTS = [
 ]
 
 export const HeroSection = () => {
+    const handleContact = () => {
+        const contactSection = document.querySelector('#contact')
+        if(contactSection){
+            contactSection.scrollIntoView({behavior:'smooth'})
+        }
+    }
     return (
-        <section className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110px]">
-            <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
-                <div className='w-full lg:max-w-[530px]'>
+        <section className="w-full lg:h-[800px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-28 sm:pb-32 py-64 lg:pb-[110px]">
+            <div className="container flex items-start justify-between flex-col-reverse lg:flex-row py-16 px-16 bg-sky-950 rounded-3xl shadow-black">
+                <div className='w-full lg:max-w-[600px]'>
                     <p className='font-mono text-teal-500'>Olá, meu nome é</p>
                     <h2 className='text-4xl font-medium mt-2'>Artur Francisco</h2>
 
-                    <p className='text-gray-400 my-6 text-sm sm:text-base'> Sou um programador que está cursando graduação em engenharia de computação
-                            no <a href="https://www.bambui.ifmg.edu.br/portal/"> IFMG - campus Bambuí</a>
+                    <p className='text-gray-400 my-6 text-sm sm:text-base'> Sou um programador que no momento está cursando graduação em engenharia de computação
+                            no <a href="https://www.bambui.ifmg.edu.br/portal/"> IFMG - campus Bambuí</a>. Tenho grande interesse na área de desenvolvimento de software tanto tanto na área de WEB, quanto mobile ou Desktop, também sou um entusiasta na área de Inteligência Artificial.
                     </p>  
                     <div className='flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]'>
                         <TechBadge name="C++"/>
                         <TechBadge name="Python"/>
                         <TechBadge name="Next.js"/>
                         <TechBadge name="R"/>
-                        <TechBadge name="Pascal"/>
+                        <TechBadge name="React"/>
+                        <TechBadge name="SQL"/>
                     </div>
                     <div className='mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row'>
-                        <Button className='shadow-button'>
+                        <Button className='shadow-button' onClick={handleContact}>
                             Entre em contato
                             <HiArrowRight size={18}/>
                         </Button>
