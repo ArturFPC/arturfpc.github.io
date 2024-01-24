@@ -1,7 +1,7 @@
-import { cn } from "@/app/lib/utils"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { TbArrowBigRight, TbArrowBigRightLine } from "react-icons/tb"
+import { cn } from '@/app/lib/utils'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { TbArrowBigRight, TbArrowBigRightLine } from 'react-icons/tb'
 
 type NavItemsProps = {
     label : string

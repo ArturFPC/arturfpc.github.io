@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server"
+import { NextResponse } from 'next/server'
 import {z} from 'zod'
 import axios from 'axios';
 
@@ -33,7 +33,7 @@ export async function POST(request:Request) {
                             inline: true
                         },
                         {
-                            name: "Mensagem",
+                            name: 'Mensagem',
                             value: message
                         },
                     ]

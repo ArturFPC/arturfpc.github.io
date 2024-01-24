@@ -1,7 +1,7 @@
-import { Link } from "@/app/components/link"
-import { TechBadge } from "@/app/components/tech-badge"
-import Image from "next/image"
-import { HiArrowNarrowRight } from "react-icons/hi"
+import { Link } from '@/app/components/link'
+import { TechBadge } from '@/app/components/tech-badge'
+import Image from 'next/image'
+import { HiArrowNarrowRight } from 'react-icons/hi'
 
 type CardProps = {
     project : {
@@ -45,7 +45,7 @@ export const Card = ({project}:CardProps) => {
                         <TechBadge key={index} name={item}/>
                     ))}
                 </div>
-                <Link className='flex'href={project.link}>
+                <Link className="flex" href={project.link}>
                     Ver projeto <HiArrowNarrowRight/>
                 </Link>
             </div>

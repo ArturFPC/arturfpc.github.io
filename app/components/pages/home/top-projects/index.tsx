@@ -1,8 +1,8 @@
-import { SectionTitle } from "@/app/components/section-title"
-import { HorizontalSplitter } from "@/app/components/splitter/horizontal"
-import { Card } from "./card"
-import { Link } from "@/app/components/link"
-import { HiArrowNarrowRight } from "react-icons/hi"
+import { SectionTitle } from '@/app/components/section-title'
+import { HorizontalSplitter } from '@/app/components/splitter/horizontal'
+import { Card } from './card'
+import { Link } from '@/app/components/link'
+import { HiArrowNarrowRight } from 'react-icons/hi'
 
 export const TopProjects = () => {
     return(

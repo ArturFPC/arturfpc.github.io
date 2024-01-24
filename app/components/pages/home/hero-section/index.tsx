@@ -3,8 +3,8 @@
 import { Button } from '@/app/components/button'
 import { TechBadge } from '@/app/components/tech-badge'
 import Image from 'next/image'
-import { HiArrowRight } from "react-icons/hi"
-import {TbBrandGithub, TbBrandLinkedin, TbBrandYoutube,TbBrandInstagram} from "react-icons/tb"
+import { HiArrowRight } from 'react-icons/hi'
+import {TbBrandGithub, TbBrandLinkedin, TbBrandYoutube,TbBrandInstagram} from 'react-icons/tb'
 const MOCK_CONTACTS = [
     {
         url: "https://github.com/ArturFPC",

@@ -1,16 +1,16 @@
 'use client'
-import Image from "next/image"
-import Link from "next/link"
-import { NavItem } from "./nav_items"
+import Image from 'next/image'
+import Link from 'next/link'
+import { NavItem } from './nav_items'
 
 const NAV_ITEMS = [
     {
-        label: "Home",
+        label: 'Home',
         href: '/'
     },
     {
-        label: "Projetos",
-        href: "/projects"
+        label: 'Projetos',
+        href: '/projects'
     }
 ]
 

@@ -1,5 +1,5 @@
-import { SectionTitle } from "@/app/components/section-title"
-import { ExperienceItem } from "./experience-item"
+import { SectionTitle } from '@/app/components/section-title'
+import { ExperienceItem } from './experience-item'
 
 export const WorkExperience = () => {
     return(
