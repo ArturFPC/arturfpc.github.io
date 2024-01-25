@@ -10,26 +10,31 @@ import axios from 'axios'
 import { toast } from 'react-hot-toast'
 
 const contactFormSchema = z.object({
-    name: z.string().min(3).max(100),
-    email: z.string().email(),
-    message: z.string().min(1).max(500),
+  name: z.string().min(3).max(100),
+  email: z.string().email(),
+  message: z.string().min(1).max(500),
 })
 
 type ContactFormData = z.infer<typeof contactFormSchema>
 
 export const ContactForm = () => {
-    const { handleSubmit, register, reset , formState: {isSubmitting}} = useForm<ContactFormData>({
-        resolver: zodResolver(contactFormSchema)
-    })
-    const onSubmit = async (data: ContactFormData) => {
-        try{
-            await axios.post('/api/contact', data)
-            reset()
-            toast.success('Fomulário enviado com sucesso!')
-        }catch{
-            toast.error('Ocorreu um erro ao enviar o formulário, tente novamente!')
-        }
+  const {
+    handleSubmit,
+    register,
+    reset,
+    formState: { isSubmitting },
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
+  })
+  const onSubmit = async (data: ContactFormData) => {
+    try {
+      await axios.post('/api/contact', data)
+      reset()
+      toast.success('Fomulário enviado com sucesso!')
+    } catch {
+      toast.error('Ocorreu um erro ao enviar o formulário, tente novamente!')
     }
+  }
     return(
         <section id="contact" className="py-16 px-6 md:py-32 flex items-center justify-center bg-gray-900">
             <div className="w-full max-w-[428px] mx-auto">
