@@ -13,7 +13,7 @@ const inter = Inter({
 
 const plexMono = IBM_Plex_Mono({
   variable: '--font-plex-mono',
-  subsets: ['latin'], 
+  subsets: ['latin'],
   weight: ['400', '500'],
 })
 
@@ -21,12 +21,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${plexMono.variable}`}>
       <body>
-        <Toaster/>
+        <Toaster />
         <Header />
         {children}
-        <ContactForm/>
-        <Footer/>
-        <BackToTop/>
+        <ContactForm />
+        <Footer />
+        <BackToTop />
       </body>
     </html>
   )
